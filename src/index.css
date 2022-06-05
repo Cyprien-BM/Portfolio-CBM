@@ -10,3 +10,8 @@
 html {
   font-size: 100%;
 }
+
+body {
+  background: #212121;
+  overflow: hidden;
+}
