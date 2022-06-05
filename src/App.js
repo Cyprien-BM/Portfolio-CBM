@@ -1,7 +1,9 @@
 import './App.css';
 import { useEffect, useState } from 'react';
+import Home from './Container/Home/Home';
 
 function App() {
+  // ------------------------------------------------------------------------------START Background code
   const windowWidth = window.innerWidth;
   const windowHeight = window.innerHeight;
 
@@ -17,7 +19,7 @@ function App() {
     setWindowDimension(newWindow);
   };
 
-   useEffect(() => {
+  useEffect(() => {
     window.addEventListener('resize', windowResize);
     return () => {
       window.removeEventListener('resize', windowResize);
@@ -26,6 +28,7 @@ function App() {
 
   const heightCss = windowDimension.height + 'px';
 
+  // Generate randomly a certain numberOfStars by creating multiple boxw shadow
   const starsPosition = (numberOfStars) => {
     let boxShadow = '';
     for (let i = 0; i < numberOfStars; i++) {
@@ -51,6 +54,48 @@ function App() {
     '--boxShadow': starsPosition(50),
     '--height': heightCss,
   };
+  // ------------------------------------------------------------------------------END Background code
+
+  // ------------------------------------------------------------------------------START Toggling section
+  // const [toggleAboutMe, setToggleAboutMe] = useState(true);
+  // const [toggleProject, setToggleProject] = useState(false);
+  // const [toggleResume, setToggleResume] = useState(false);
+  // const [toggleContact, setToggleContact] = useState(false);
+
+  // const initialStatus = {
+  //   aboutMe: false,
+  //   project: false,
+  //   resume: false,
+  //   contact: false,
+  // };
+
+  // const [status, setStatus] = useState(initialStatus);
+
+  // const toggleElement = (element) => {
+  //   switch (element) {
+  //     case 'aboutMe':
+  //       setStatus((status) => ({ ...initialStatus, aboutMe: !status.aboutMe }));
+  //       break;
+  //     case 'project':
+  //       setStatus((status) => ({ ...initialStatus, project: true }));
+  //       break;
+  //     case 'resume':
+  //       setStatus((status) => ({ ...initialStatus, resume: true }));
+  //       break;
+  //     case 'contact':
+  //       setStatus((status) => ({ ...initialStatus, contact: true }));
+  //       break;
+  //     default:
+  //       break;
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   const newStatus = { ...status, aboutMe: true };
+  //   setStatus(newStatus);
+  // }, []);
+
+  // console.log(status);
 
   return (
     <div className='App'>
@@ -58,7 +103,7 @@ function App() {
         <div style={boxShadowFirst} id='star'></div>
         <div style={boxShadowSecond} id='star2'></div>
         <div style={boxShadowThird} id='star3'></div>
-        <h1>Cyprien BELLEMIN MENARD</h1>
+        <Home />
       </div>
     </div>
   );

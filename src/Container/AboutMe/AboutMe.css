@@ -1,0 +1,16 @@
+.about-me {
+  height: 40px;
+  transition: height ease-in-out 800ms;
+  overflow: hidden;
+}
+
+.about-me__title--container {
+  text-align: right;
+  width: 0px;
+  white-space: nowrap;
+  transition: width ease-in-out 800ms;
+}
+
+.content {
+  color: aliceblue;
+}
