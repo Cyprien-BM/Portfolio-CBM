@@ -54,9 +54,9 @@ export default function Home() {
   return (
     <>
       <AboutMe toggleElement={toggleElement} status={status.aboutMe} />
-      <Project />
-      <Resume />
-      <Contact />
+      <Project toggleElement={toggleElement} status={status.project} />
+      <Resume toggleElement={toggleElement} status={status.resume} />
+      <Contact toggleElement={toggleElement} status={status.contact} />
     </>
   );
 }

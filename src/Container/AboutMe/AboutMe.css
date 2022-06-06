@@ -1,16 +1,23 @@
 .about-me {
-  height: 40px;
-  transition: height ease-in-out 800ms;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+  height: 100%;
   overflow: hidden;
 }
 
-.about-me__title--container {
-  text-align: right;
-  width: 0px;
-  white-space: nowrap;
-  transition: width ease-in-out 800ms;
+.about-me__content h1 {
+  font-size: 4rem;
 }
 
-.content {
-  color: aliceblue;
+.about-me__content p {
+  font-size: 1.5rem;
 }

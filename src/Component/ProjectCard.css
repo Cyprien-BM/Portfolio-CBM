@@ -1,0 +1,42 @@
+.project-card {
+  background-color: #212121;
+  width: 300px;
+  height: 550px;
+  outline: aliceblue solid 1px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.project-card img {
+  border-radius: 9px 9px 0 0;
+  width: auto;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid aliceblue;
+}
+
+.project-card__data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  gap: 1rem
+}
+
+.project-card__link {
+  text-decoration: none;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.8rem;
+  width: 150px;
+  border: 1px solid aliceblue;
+}
+
+.skill__list {
+  list-style: none;
+}

@@ -15,10 +15,10 @@ body {
   background: #212121;
   overflow: hidden;
   height: 100vh;
+  color: aliceblue;
 }
 
 h2 {
-  color: aliceblue;
   width: 100%;
   display: block;
   height: 40px;
@@ -29,4 +29,8 @@ h2 {
 section {
   border-bottom: 1px solid aliceblue;
   padding: 0 2rem;
+}
+
+strong {
+  color: greenyellow;
 }

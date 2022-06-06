@@ -1,4 +1,5 @@
 import './App.css';
+import './ContainerAnimation.css'
 import { useEffect, useState } from 'react';
 import Home from './Container/Home/Home';
 
@@ -99,12 +100,12 @@ function App() {
 
   return (
     <div className='App'>
-      <div className='background'>
+      <main className='background'>
         <div style={boxShadowFirst} id='star'></div>
         <div style={boxShadowSecond} id='star2'></div>
         <div style={boxShadowThird} id='star3'></div>
         <Home />
-      </div>
+      </main>
     </div>
   );
 }

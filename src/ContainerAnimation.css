@@ -1,0 +1,41 @@
+.about-me,
+.project,
+.resume,
+.contact {
+  height: 40px;
+  transition: height ease-in-out 800ms 500ms;
+  overflow: hidden;
+}
+
+.about-me.hidden,
+.project.hidden,
+.resume.hidden,
+.contact.hidden {
+  transition: height ease-in-out 800ms 500ms;
+}
+
+.about-me__title--container,
+.project__title--container,
+.resume__title--container,
+.contact__title--container {
+  text-align: right;
+  width: 100%;
+  white-space: nowrap;
+  transition: width ease-in-out 700ms;
+}
+
+.about-me__content.show,
+.project__content.show,
+.resume__content,
+.contact__content.show {
+  opacity: 1;
+  transition: opacity 500ms 1300ms ease-in-out;
+}
+
+.about-me__content.hidden,
+.project__content.hidden,
+.resume__content.hidden,
+.contact__content.hidden {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
