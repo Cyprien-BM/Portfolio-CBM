@@ -1,5 +1,5 @@
 import './App.css';
-import './ContainerAnimation.css'
+import './ContainerAnimation.css';
 import { useEffect, useState } from 'react';
 import Home from './Container/Home/Home';
 

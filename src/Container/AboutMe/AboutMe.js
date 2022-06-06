@@ -25,7 +25,7 @@ export default function AboutMe(props) {
           <strong>Back-end (Node.js, Express).</strong>
           <br />
           <br />
-          Vous trouverez ici mes divers projets ainsi que mon parcours.
+          Vous trouverez sur ce portfolio mes divers projets ainsi que mon parcours.
         </p>
       </div>
     </section>
