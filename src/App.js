@@ -57,47 +57,6 @@ function App() {
   };
   // ------------------------------------------------------------------------------END Background code
 
-  // ------------------------------------------------------------------------------START Toggling section
-  // const [toggleAboutMe, setToggleAboutMe] = useState(true);
-  // const [toggleProject, setToggleProject] = useState(false);
-  // const [toggleResume, setToggleResume] = useState(false);
-  // const [toggleContact, setToggleContact] = useState(false);
-
-  // const initialStatus = {
-  //   aboutMe: false,
-  //   project: false,
-  //   resume: false,
-  //   contact: false,
-  // };
-
-  // const [status, setStatus] = useState(initialStatus);
-
-  // const toggleElement = (element) => {
-  //   switch (element) {
-  //     case 'aboutMe':
-  //       setStatus((status) => ({ ...initialStatus, aboutMe: !status.aboutMe }));
-  //       break;
-  //     case 'project':
-  //       setStatus((status) => ({ ...initialStatus, project: true }));
-  //       break;
-  //     case 'resume':
-  //       setStatus((status) => ({ ...initialStatus, resume: true }));
-  //       break;
-  //     case 'contact':
-  //       setStatus((status) => ({ ...initialStatus, contact: true }));
-  //       break;
-  //     default:
-  //       break;
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   const newStatus = { ...status, aboutMe: true };
-  //   setStatus(newStatus);
-  // }, []);
-
-  // console.log(status);
-
   return (
     <div className='App'>
       <main className='background'>

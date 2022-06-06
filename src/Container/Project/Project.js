@@ -3,13 +3,14 @@ import ProjectCard from '../../Component/ProjectCard';
 import './Project.css';
 
 export default function Project(props) {
+  
   const allProject = [
     {
       id: 1,
       name: 'DBoardgames',
       media: ['./dboargames.png'],
       description:
-        'App React permettant de trouver des jeux de sociétés via l\'API Board Game Atlas et de les sauvegarder dans le localStorage. Mise en ligne avec Firebase.',
+        "App React permettant de trouver des jeux de sociétés via l'API Board Game Atlas et de les sauvegarder dans le localStorage. Mise en ligne avec Firebase.",
       type: 'personnel',
       skills: ['React', 'JavaScript', 'CSS'],
       github: 'https://github.com/Cyprien-BM/DBoardgames',
@@ -20,7 +21,7 @@ export default function Project(props) {
       name: 'Groupomania',
       media: ['./groupomania.png'],
       description:
-        'Réalisation fullstack d\'un réseau social d\'entreprise avec gestion/creation de compte, de poste, de like et de commentaire.',
+        "Réalisation fullstack d'un réseau social d'entreprise avec gestion/creation de compte, de poste, de like et de commentaire.",
       type: 'formation',
       skills: [
         'React',
@@ -40,41 +41,48 @@ export default function Project(props) {
       id: 3,
       name: 'Hot Takes',
       media: ['./hottakes.png'],
-      description: 'Réalisation d\'une API de type CRUD pour le back-end d\'un site de partage et de notation de sauce piquante. Gestion des données utilisateurs et des sauces.',
+      description:
+        "Réalisation d'une API de type CRUD pour le back-end d'un site de partage et de notation de sauce piquante. Gestion des données utilisateurs et des sauces.",
       type: 'formation',
-      skills: ['JavaScript', 'Node.js',
-      'Express', 'MongoDB', 'Mongoose'],
-      github: 'https://github.com/Cyprien-BM/OpenClassrooms_Projet-6_Creation-d-une-API-securisee-pour-une-application-d-avis-gastronomiques',
+      skills: ['JavaScript', 'Node.js', 'Express', 'MongoDB', 'Mongoose'],
+      github:
+        'https://github.com/Cyprien-BM/OpenClassrooms_Projet-6_Creation-d-une-API-securisee-pour-une-application-d-avis-gastronomiques',
       live: '',
     },
     {
       id: 4,
       name: 'Kanap',
       media: ['./kanap.png'],
-      description: 'Réalisation du code JavaScript pour la partie front-end d\'un site de vente en ligne de canapé. Communication avec l\'API fournis, gestion du panier via le localStorage et simulation de commande',
+      description:
+        "Réalisation du code JavaScript pour la partie front-end d'un site de vente en ligne de canapé. Communication avec l'API fournis, gestion du panier via le localStorage et simulation de commande",
       type: 'formation',
       skills: ['JavaScript'],
-      github: 'https://github.com/Cyprien-BM/OpenClassrooms_Projet-5_Construisez-un-site-e-commerce-en-JavaScript',
+      github:
+        'https://github.com/Cyprien-BM/OpenClassrooms_Projet-5_Construisez-un-site-e-commerce-en-JavaScript',
       live: '',
     },
     {
       id: 5,
       name: 'Oh My Food',
       media: ['./ohmyfood.png'],
-      description: 'Intégration responsive de la maquette d\'un site de réservation de repas en ligne',
+      description:
+        "Intégration responsive de la maquette d'un site de réservation de repas en ligne",
       type: 'formation',
       skills: ['HTML', 'CSS', 'SASS'],
-      github: 'https://github.com/Cyprien-BM/OpenClassrooms_Projet-3_Dynamisez-une-page-web-avec-des-animations-CSS',
+      github:
+        'https://github.com/Cyprien-BM/OpenClassrooms_Projet-3_Dynamisez-une-page-web-avec-des-animations-CSS',
       live: 'https://cyprien-bm.github.io/OpenClassrooms_Projet-3_Dynamisez-une-page-web-avec-des-animations-CSS/',
     },
     {
       id: 6,
       name: 'Booki',
       media: ['./booki.png'],
-      description: 'Intégration responsive de la maquette d\'un site de réservation de logement en ligne',
+      description:
+        "Intégration responsive de la maquette d'un site de réservation de logement en ligne",
       type: 'formation',
       skills: ['HTML', 'CSS'],
-      github: 'https://github.com/Cyprien-BM/OpenClassrooms_Projet-2_Transformez-une-maquette-en-site-web-avec-HTML-CSS',
+      github:
+        'https://github.com/Cyprien-BM/OpenClassrooms_Projet-2_Transformez-une-maquette-en-site-web-avec-HTML-CSS',
       live: 'https://cyprien-bm.github.io/OpenClassrooms_Projet-2_Transformez-une-maquette-en-site-web-avec-HTML-CSS/',
     },
   ];

@@ -11,7 +11,7 @@
 .project h2,
 .resume h2,
 .contact h2 {
-color: greenyellow;
+  color: greenyellow;
 }
 
 .about-me.hidden,
@@ -27,9 +27,6 @@ color: greenyellow;
 .contact.hidden h2 {
   color: aliceblue;
 }
-
-
-
 
 .about-me__title--container,
 .project__title--container,
