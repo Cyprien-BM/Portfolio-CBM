@@ -34,7 +34,7 @@ export default function Resume(props) {
                   machine à mesurer tridimensionnelle
                 </a>{' '}
                 pour l'industrie aéronautique et plus d'un an en tant que
-                dessinateur industriel dans un bureau d'étude spécialisée dans
+                dessinateur industriel dans un bureau d'étude spécialisé dans
                 la métallerie, j'ai suivi la formation de{' '}
                 <strong>Développeur Web</strong> d'
                 <strong>OpenClassrooms</strong> afin d'effectuer une
@@ -43,7 +43,7 @@ export default function Resume(props) {
               <br />
               <p>
                 J'ai pu lors de cette formation acquérir les bases du
-                <strong> développemt Web </strong>au travers de mes divers{' '}
+                <strong> développement Web </strong>au travers de mes divers{' '}
                 <strong onClick={() => props.toggleElement('project')} className='contact-link'>
                   projets.
                 </strong>{' '}
