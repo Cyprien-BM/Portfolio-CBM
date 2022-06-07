@@ -84,6 +84,8 @@
 
   .contact__content {
     overflow-y: scroll;
+    width: 305px;
+    font-size: 1.2rem;
   }
 
   .contact-form {

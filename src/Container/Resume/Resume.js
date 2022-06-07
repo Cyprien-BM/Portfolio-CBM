@@ -1,6 +1,7 @@
 import { React } from 'react';
 import './Resume.css';
 import { BsArrowUp } from 'react-icons/bs';
+import resume from '../../Assets/Images/cv.pdf'
 
 export default function Resume(props) {
   return (
@@ -15,7 +16,7 @@ export default function Resume(props) {
         className='resume__title--container'
         style={{ width: props.status ? '0' : '100%' }}
       >
-        <h2 className='content__title'>Mon parcour</h2>
+        <h2 className='content__title'>Mon parcours</h2>
       </div>
       <div className='content'>
         <div
@@ -124,7 +125,7 @@ export default function Resume(props) {
               </p>
             </div>
           </div>
-          <a href='' className='resume__download'>
+          <a href={resume} className='resume__download'>
             CV version imprimable
           </a>
         </div>
