@@ -24,7 +24,7 @@ export default function Resume(props) {
           <div className='resume__content-txt'>
             <div className='content-txt__description'>
               <p>
-                Après 6 ans d'expérience en temps que contrôleur sur{' '}
+                Après 6 ans d'expérience en tant que contrôleur sur{' '}
                 <a
                   href='https://fr.wikipedia.org/wiki/Machine_%C3%A0_mesurer_tridimensionnelle'
                   target={'_blank'}
@@ -32,23 +32,23 @@ export default function Resume(props) {
                 >
                   machine à mesurer tridimensionnelle
                 </a>{' '}
-                pour l'industrie aéronautique et plus d'un an en temps que
+                pour l'industrie aéronautique et plus d'un an en tant que
                 dessinateur industriel dans un bureau d'étude spécialisée dans
                 la métallerie, j'ai suivi la formation de{' '}
                 <strong>Développeur Web</strong> d'
                 <strong>OpenClassrooms</strong> afin d'effectuer une
-                reconversion professionelle dans ce domaine.
+                reconversion professionnelle dans ce domaine.
               </p>
               <br />
               <p>
-                J'ai pu lors de cette formation acquérir bases du
+                J'ai pu lors de cette formation acquérir les bases du
                 <strong> développemt Web </strong>au travers de mes divers{' '}
-                <strong onClick={() => props.toggleElement('project')}>
+                <strong onClick={() => props.toggleElement('project')} className='contact-link'>
                   projets.
                 </strong>{' '}
                 Curieux, autodidacte et motivé, je continue aujourd'hui de
                 développer ces compétences avec de projets personnels ou via
-                divers cours et plateformes d'apprentisage comme{' '}
+                divers cours et plateformes d'apprentissage comme{' '}
                 <strong>
                   <a
                     href='https://www.udemy.com/courses/search/?q=developpement+web&src=sac&kw=d%C3%A9veloppement'
@@ -93,8 +93,8 @@ export default function Resume(props) {
               <p>
                 Déterminé à progresser et à réussir dans ce milieu, je suis
                 aujourd'hui à l'écoute d'une nouvelle opportunité
-                professionelle, alors n'hésitez pas à me{' '}
-                <strong onClick={() => props.toggleElement('contact')}>
+                professionnelle, alors n'hésitez pas à me{' '}
+                <strong onClick={() => props.toggleElement('contact')} className='contact-link'>
                   contacter !
                 </strong>
               </p>

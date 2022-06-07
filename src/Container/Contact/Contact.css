@@ -1,5 +1,12 @@
+.contact .content {
+  height: calc(100% - 40px);
+}
+
 .contact__content {
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
 }
 
 .social-network {
@@ -20,6 +27,7 @@
 
 .contact-link {
   border-bottom: 1px solid greenyellow;
+  cursor: pointer;
 }
 
 .contact__form-container {
@@ -57,10 +65,15 @@
   color: aliceblue;
   border: 1px solid aliceblue;
   padding: .5rem 1rem;
-  margin-top: 1rem;
+  margin: 1rem auto 0 auto;
+  width: 50%;
 }
 
 .form__send:hover {
   cursor: pointer;
   background-color: #4d4d4d;
+}
+
+.mail-status {
+  margin-top: .5rem;
 }

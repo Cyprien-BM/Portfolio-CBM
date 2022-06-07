@@ -10,33 +10,9 @@ import emailjs from 'emailjs-com';
 export default function Contact(props) {
   const formRef = useRef();
 
-  const initialState = {
-    object: '',
-    name: '',
-    mail: '',
-    body: '',
-  };
-
-  const [email, setEmail] = useState(initialState);
-
-  const handleInputs = (event) => {
-    if (event.target.classList.contains('name')) {
-      const newEmailState = { ...email, name: event.target.value };
-      setEmail(newEmailState);
-    } else if (event.target.classList.contains('object')) {
-      const newEmailState = { ...email, object: event.target.value };
-      setEmail(newEmailState);
-    } else if (event.target.classList.contains('mail')) {
-      const newEmailState = { ...email, mail: event.target.value };
-      setEmail(newEmailState);
-    } else if (event.target.classList.contains('body')) {
-      const newEmailState = { ...email, body: event.target.value };
-      setEmail(newEmailState);
-    }
-  };
+  const [email, setEmail] = useState('');
 
   const sendEmail = (event) => {
-    console.log('ici');
     event.preventDefault();
 
     emailjs
@@ -48,13 +24,23 @@ export default function Contact(props) {
       )
       .then(
         (response) => {
-          console.log(response);
+          if (response.text === 'OK') {
+            setEmail('Email envoyé');
+            resetEmail()
+          }
         },
         (error) => {
-          console.log(error);
+          if (error) {
+            setEmail('Un problème est survenu');
+            resetEmail()
+          }
         }
       );
   };
+
+  const resetEmail = () => {
+    setTimeout(() => setEmail(''), 10000)
+  }
 
   return (
     <section
@@ -101,18 +87,14 @@ export default function Contact(props) {
             </div>
             <div className='social-network__data'>
               <IoMdPin style={{ color: 'greenyellow' }} />
-              Yvrac, Bordeaux, 33
+              Yvrac, Bordeaux, 33, France
             </div>
           </div>
           <div className='contact__form-container'>
             <h3>
               <strong>Contactez-moi</strong>
             </h3>
-            <form
-              onSubmit={sendEmail}
-              className='contact-form'
-              ref={formRef}
-            >
+            <form onSubmit={sendEmail} className='contact-form' ref={formRef}>
               <label htmlFor='input-name' className='contact-form__label'>
                 Nom *
               </label>
@@ -121,7 +103,6 @@ export default function Contact(props) {
                 required='required'
                 className='contact-form__input name'
                 id='input-name'
-                onInput={handleInputs}
                 name='name'
               />
               <label htmlFor='input-object' className='contact-form__label'>
@@ -132,7 +113,6 @@ export default function Contact(props) {
                 required='required'
                 className='contact-form__input object'
                 id='input-object'
-                onInput={handleInputs}
                 name='objet'
               />
               <label htmlFor='input-mail' className='contact-form__label'>
@@ -143,7 +123,6 @@ export default function Contact(props) {
                 required='required'
                 className='contact-form__input mail'
                 id='input-mail'
-                onInput={handleInputs}
                 name='mail'
               />
               <label htmlFor='input-body' className='contact-form__label'>
@@ -155,13 +134,11 @@ export default function Contact(props) {
                 required='required'
                 className='contact-form__input body'
                 id='input-body'
-                onInput={handleInputs}
                 name='body'
               ></textarea>
+              <button className='form__send'>ENVOYER</button>
             </form>
-            <button className='form__send' type='submit'>
-              ENVOYER
-            </button>
+            <p className='mail-status'>{email}</p>
           </div>
         </div>
       </div>

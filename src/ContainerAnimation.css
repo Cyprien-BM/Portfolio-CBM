@@ -58,5 +58,7 @@
 .resume__content.hidden,
 .contact__content.hidden {
   opacity: 0;
-  transition: opacity 500ms ease-in-out;
+  visibility: hidden;
+  transition: opacity 500ms ease-in-out, visibility 600ms;
+
 }
