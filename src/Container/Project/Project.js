@@ -1,14 +1,19 @@
 import { React, useState } from 'react';
 import ProjectCard from '../../Component/ProjectCard';
 import './Project.css';
+import dboardgame from '../../Assets/Images/dboargames.png';
+import groupomania from '../../Assets/Images/groupomania.png';
+import hottakes from '../../Assets/Images/hottakes.png';
+import kanap from '../../Assets/Images/kanap.png';
+import ohmyfood from '../../Assets/Images/ohmyfood.png';
+import booki from '../../Assets/Images/booki.png';
 
 export default function Project(props) {
-  
   const allProject = [
     {
       id: 1,
       name: 'DBoardgames',
-      media: ['./dboargames.png'],
+      media: [dboardgame],
       description:
         "App React permettant de trouver des jeux de sociétés via l'API Board Game Atlas et de les sauvegarder dans le localStorage. Mise en ligne avec Firebase.",
       type: 'personnel',
@@ -19,7 +24,7 @@ export default function Project(props) {
     {
       id: 2,
       name: 'Groupomania',
-      media: ['./groupomania.png'],
+      media: [groupomania],
       description:
         "Réalisation fullstack d'un réseau social d'entreprise avec gestion/creation de compte, de poste, de like et de commentaire.",
       type: 'formation',
@@ -40,7 +45,7 @@ export default function Project(props) {
     {
       id: 3,
       name: 'Hot Takes',
-      media: ['./hottakes.png'],
+      media: [hottakes],
       description:
         "Réalisation d'une API de type CRUD pour le back-end d'un site de partage et de notation de sauce piquante. Gestion des données utilisateurs et des sauces.",
       type: 'formation',
@@ -52,7 +57,7 @@ export default function Project(props) {
     {
       id: 4,
       name: 'Kanap',
-      media: ['./kanap.png'],
+      media: [kanap],
       description:
         "Réalisation du code JavaScript pour la partie front-end d'un site de vente en ligne de canapé. Communication avec l'API fournis, gestion du panier via le localStorage et simulation de commande",
       type: 'formation',
@@ -64,7 +69,7 @@ export default function Project(props) {
     {
       id: 5,
       name: 'Oh My Food',
-      media: ['./ohmyfood.png'],
+      media: [ohmyfood],
       description:
         "Intégration responsive de la maquette d'un site de réservation de repas en ligne",
       type: 'formation',
@@ -76,7 +81,7 @@ export default function Project(props) {
     {
       id: 6,
       name: 'Booki',
-      media: ['./booki.png'],
+      media: [booki],
       description:
         "Intégration responsive de la maquette d'un site de réservation de logement en ligne",
       type: 'formation',
