@@ -6,7 +6,9 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   height: 100%;
+  gap: 1rem;
 }
 
 .social-network {
@@ -76,4 +78,15 @@
 
 .mail-status {
   margin-top: .5rem;
+}
+
+@media all and (max-width: 762px) {
+
+  .contact__content {
+    overflow-y: scroll;
+  }
+
+  .contact-form {
+    width: 300px;
+  }
 }

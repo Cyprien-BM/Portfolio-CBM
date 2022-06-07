@@ -34,3 +34,9 @@ section {
 strong {
   color: greenyellow;
 }
+
+@media all and (max-width: 991px) {
+  html {
+    font-size: 80%;
+  }
+}

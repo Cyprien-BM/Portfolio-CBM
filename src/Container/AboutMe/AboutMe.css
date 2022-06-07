@@ -21,3 +21,19 @@
 .about-me__content p {
   font-size: 1.5rem;
 }
+
+@media all and (max-width: 991px) {
+
+  .about-me__content {
+    overflow-y: scroll;
+    gap: 1rem;
+  }
+
+  .about-me__content h1 {
+    font-size: 3rem;
+  }
+  
+  .about-me__content p {
+    font-size: 1.2rem;
+  }
+}

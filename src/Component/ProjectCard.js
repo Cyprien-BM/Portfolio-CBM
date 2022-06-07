@@ -6,7 +6,7 @@ export default function ProjectCard(props) {
   return (
     <div className='project-card'>
       <a href={props.media[0]} target='_blank'>
-        <img src={props.media[0]} alt='' />
+        <img src={props.media[0]} alt='Photo du projet' />
       </a>
       <div className='project-card__data'>
         <h3>
