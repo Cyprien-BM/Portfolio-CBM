@@ -39,4 +39,9 @@ strong {
   html {
     font-size: 80%;
   }
+
+  section {
+    border-bottom: 1px solid aliceblue;
+    padding: 0 .5rem;
+  }
 }

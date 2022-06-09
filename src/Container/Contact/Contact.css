@@ -87,6 +87,8 @@
     font-size: 1.2rem;
     height: 100%;
     padding-bottom: 1rem;
+      margin-left: auto;
+      margin-right: auto;
   }
 
   .contact__form-container {
