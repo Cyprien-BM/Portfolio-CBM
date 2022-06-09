@@ -45,7 +45,8 @@
 
 @media all and (max-width: 767px) {
   .project__content {
-    height: 100%;
+    height: calc(100% - 50px);
+    width: 100%;
   }
 
   .project__slide {
@@ -53,5 +54,8 @@
     flex-direction: column;
     align-items: center;
     overflow-y: scroll;
+    overflow-x: hidden;
+    width: 310px;
+    height: 100%;
   }
 }

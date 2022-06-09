@@ -22,8 +22,8 @@ export default function AboutMe(props) {
         <p>Bonjour, je suis</p>
         <h1>Cyprien BELLEMIN MENARD</h1>
         <p>
-          Et je suis <strong>Développeur web</strong>, intéréssé autant par le{' '}
-          <strong>Front-end (JavaScript, React)</strong> que par le{' '}
+          Et je suis <strong>Développeur web</strong>, Formé autant sur le{' '}
+          <strong>Front-end (JavaScript, React)</strong> que sur le{' '}
           <strong>Back-end (Node.js, Express).</strong>
           <br />
           <br />
