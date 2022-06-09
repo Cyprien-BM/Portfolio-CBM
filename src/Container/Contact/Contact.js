@@ -1,6 +1,5 @@
 import { React, useState, useRef } from 'react';
 import './Contact.css';
-import { IconContext } from 'react-icons';
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
 import { GoMail } from 'react-icons/go';
 import { FaMobileAlt } from 'react-icons/fa';
@@ -26,21 +25,21 @@ export default function Contact(props) {
         (response) => {
           if (response.text === 'OK') {
             setEmail('Email envoyé');
-            resetEmail()
+            resetEmail();
           }
         },
         (error) => {
           if (error) {
             setEmail('Un problème est survenu');
-            resetEmail()
+            resetEmail();
           }
         }
       );
   };
 
   const resetEmail = () => {
-    setTimeout(() => setEmail(''), 10000)
-  }
+    setTimeout(() => setEmail(''), 10000);
+  };
 
   return (
     <section

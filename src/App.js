@@ -29,13 +29,14 @@ function App() {
 
   const heightCss = windowDimension.height + 'px';
 
-  // Generate randomly a certain numberOfStars by creating multiple boxw shadow
+  // Randomly generate a certain numberOfStars by creating multiple box shadow
   const starsPosition = (numberOfStars) => {
     let boxShadow = '';
     for (let i = 0; i < numberOfStars; i++) {
-      boxShadow += `${i > 0 ? ', ' : ''}${Math.floor(
-        Math.random() * windowDimension.width
-      )}px ${Math.floor(Math.random() * windowDimension.height)}px #C0C0C0`;
+      boxShadow += `${i > 0 ? ', ' : ''}
+      ${Math.floor(Math.random() * windowDimension.width)}px 
+      ${Math.floor(Math.random() * windowDimension.height)}px 
+      #C0C0C0`;
     }
 
     return boxShadow;

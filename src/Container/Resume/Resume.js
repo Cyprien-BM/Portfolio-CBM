@@ -1,7 +1,7 @@
 import { React } from 'react';
 import './Resume.css';
 import { BsArrowUp } from 'react-icons/bs';
-import resume from '../../Assets/Images/cv.pdf'
+import resume from '../../Assets/Images/cv.pdf';
 
 export default function Resume(props) {
   return (
@@ -34,8 +34,8 @@ export default function Resume(props) {
                   machine à mesurer tridimensionnelle
                 </a>{' '}
                 pour l'industrie aéronautique et plus d'un an en tant que
-                dessinateur industriel dans un bureau d'étude spécialisé dans
-                la métallerie, j'ai suivi la formation de{' '}
+                dessinateur industriel dans un bureau d'étude spécialisé dans la
+                métallerie, j'ai suivi la formation de{' '}
                 <strong>Développeur Web</strong> d'
                 <strong>OpenClassrooms</strong> afin d'effectuer une
                 reconversion professionnelle dans ce domaine.
@@ -44,7 +44,10 @@ export default function Resume(props) {
               <p>
                 J'ai pu lors de cette formation acquérir les bases du
                 <strong> développement Web </strong>au travers de mes divers{' '}
-                <strong onClick={() => props.toggleElement('project')} className='contact-link'>
+                <strong
+                  onClick={() => props.toggleElement('project')}
+                  className='contact-link'
+                >
                   projets.
                 </strong>{' '}
                 Curieux, autodidacte et motivé, je continue aujourd'hui de
@@ -95,7 +98,10 @@ export default function Resume(props) {
                 Déterminé à progresser et à réussir dans ce milieu, je suis
                 aujourd'hui à l'écoute d'une nouvelle opportunité
                 professionnelle, alors n'hésitez pas à me{' '}
-                <strong onClick={() => props.toggleElement('contact')} className='contact-link'>
+                <strong
+                  onClick={() => props.toggleElement('contact')}
+                  className='contact-link'
+                >
                   contacter !
                 </strong>
               </p>

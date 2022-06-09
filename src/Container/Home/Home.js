@@ -32,7 +32,10 @@ export default function Home() {
         break;
       case 'resume':
         !status.resume &&
-          setStatus((status) => ({ ...initialStatus, resume: !status.resume }));
+          setStatus((status) => ({
+            ...initialStatus,
+            resume: !status.resume,
+          }));
         break;
       case 'contact':
         !status.contact &&

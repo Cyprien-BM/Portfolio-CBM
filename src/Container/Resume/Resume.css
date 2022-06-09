@@ -21,6 +21,7 @@
 
 .content-txt__description {
   width: 60%;
+  padding-right: 8%;
 }
 
 .content-txt__timeline {
@@ -64,13 +65,13 @@
 }
 
 @media all and (max-width: 991px) {
-
   .resume__content {
     height: 100%;
   }
 
   .content-txt__description {
     width: 80%;
+    padding: 0;
   }
 
   .content-txt__timeline {

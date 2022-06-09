@@ -1,4 +1,4 @@
-import { React, useState } from 'react';
+import { React } from 'react';
 import './AboutMe.css';
 
 export default function AboutMe(props) {
@@ -16,7 +16,9 @@ export default function AboutMe(props) {
       >
         <h2 className='content__title'>À propos de moi</h2>
       </div>
-      <div className={'about-me__content ' + (!props.status ? 'hidden' : 'show')}>
+      <div
+        className={'about-me__content ' + (!props.status ? 'hidden' : 'show')}
+      >
         <p>Bonjour, je suis</p>
         <h1>Cyprien BELLEMIN MENARD</h1>
         <p>
@@ -25,7 +27,8 @@ export default function AboutMe(props) {
           <strong>Back-end (Node.js, Express).</strong>
           <br />
           <br />
-          Vous trouverez sur ce portfolio mes divers projets ainsi que mon parcours.
+          Vous trouverez sur ce portfolio mes divers projets ainsi que mon
+          parcours.
         </p>
       </div>
     </section>
