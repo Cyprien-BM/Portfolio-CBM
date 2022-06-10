@@ -70,6 +70,7 @@
   }
 
   .content-txt__description {
+    margin: auto;
     width: 80%;
     padding: 0;
   }
