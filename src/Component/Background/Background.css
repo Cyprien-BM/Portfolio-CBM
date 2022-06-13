@@ -68,5 +68,5 @@
 #star2,
 #star3 {
   top: var(--starYPosition);
-  transition: top ease-in-out 300ms;
+  transition: top cubic-bezier(.65,0,.35,1) 1000ms;
 }

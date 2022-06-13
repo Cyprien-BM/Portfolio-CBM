@@ -61,15 +61,15 @@ export default function Background() {
 
   document.documentElement.style.setProperty(
     '--boxShadowOne',
-    starsPosition(160, '#C0C0C0')
+    starsPosition(windowWidth > 768 ? 160 : 50, '#C0C0C0')
   );
   document.documentElement.style.setProperty(
     '--boxShadowSecond',
-    starsPosition(60, '#D0D0D0')
+    starsPosition(windowWidth > 768 ? 60 : 20, '#D0D0D0')
   );
   document.documentElement.style.setProperty(
     '--boxShadowThird',
-    starsPosition(20, '#E5E5E5')
+    starsPosition(windowWidth > 768 ? 20 : 10, '#E5E5E5')
   );
   document.documentElement.style.setProperty('--height', heightCss);
   // ------------------------------------------------------------------------------END Background code
