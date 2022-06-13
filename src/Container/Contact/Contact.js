@@ -45,16 +45,9 @@ export default function Contact(props) {
     <section
       className={'contact ' + (!props.status ? 'hidden' : '')}
       onClick={() => props.toggleElement('contact')}
-      style={{
-        height: props.status ? `${window.innerHeight - 3 * 44}px` : '40px',
-      }}
     >
-      <div
-        className='contact__title--container'
-        style={{ width: props.status ? '0' : '100%' }}
-      >
-        <h2 className='content__title'>Contact</h2>
-      </div>
+        <h2 className={'contact__title' + (props.status ? ' left' : '')}>Contact</h2>
+
       <div className='content'>
         <div
           className={'contact__content ' + (!props.status ? 'hidden' : 'show')}

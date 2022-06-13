@@ -22,6 +22,7 @@ export default function Home() {
             ...initialStatus,
             aboutMe: !status.aboutMe,
           }));
+        changeBackgroundYPosition(0);
         break;
       case 'project':
         !status.project &&
@@ -29,6 +30,7 @@ export default function Home() {
             ...initialStatus,
             project: !status.project,
           }));
+        changeBackgroundYPosition(1);
         break;
       case 'resume':
         !status.resume &&
@@ -36,6 +38,7 @@ export default function Home() {
             ...initialStatus,
             resume: !status.resume,
           }));
+        changeBackgroundYPosition(2);
         break;
       case 'contact':
         !status.contact &&
@@ -43,10 +46,18 @@ export default function Home() {
             ...initialStatus,
             contact: !status.contact,
           }));
+        changeBackgroundYPosition(3);
         break;
       default:
         break;
     }
+  };
+
+  const changeBackgroundYPosition = (value) => {
+    document.documentElement.style.setProperty(
+      '--starYPosition',
+      `calc(-${value} * (100vh / 3))`
+    );
   };
 
   useEffect(() => {

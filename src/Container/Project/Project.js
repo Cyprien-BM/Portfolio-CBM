@@ -135,16 +135,9 @@ export default function Project(props) {
     <section
       className={'project ' + (!props.status ? 'hidden' : '')}
       onClick={() => props.toggleElement('project')}
-      style={{
-        height: props.status ? `${window.innerHeight - 3 * 44}px` : '40px',
-      }}
     >
-      <div
-        className='project__title--container'
-        style={{ width: props.status ? '0' : '100%' }}
-      >
-        <h2 className='content__title'>Projets</h2>
-      </div>
+
+        <h2 className={'project__title' + (props.status ? ' left' : '')}>Projets</h2>
       <div
         className={'project__content ' + (!props.status ? 'hidden' : 'show')}
       >

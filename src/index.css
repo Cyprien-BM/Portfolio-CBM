@@ -7,6 +7,18 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+:root {
+  --boxShadowOne: none;
+  --boxShadowSecond: none;
+  --boxShadowThird: none;
+  --height: 0px;
+  --parallax1: none;
+  --parallax2: none;
+  --parallax3: none;
+  --translateBackgroundY: none;
+  --starYPosition: 0;
+}
+
 html {
   font-size: 100%;
 }

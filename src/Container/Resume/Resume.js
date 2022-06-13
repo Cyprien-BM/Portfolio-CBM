@@ -8,16 +8,10 @@ export default function Resume(props) {
     <section
       className={'resume ' + (!props.status ? 'hidden' : '')}
       onClick={() => props.toggleElement('resume')}
-      style={{
-        height: props.status ? `${window.innerHeight - 3 * 44}px` : '40px',
-      }}
     >
-      <div
-        className='resume__title--container'
-        style={{ width: props.status ? '0' : '100%' }}
-      >
-        <h2 className='content__title'>Mon parcours</h2>
-      </div>
+      <h2 className={'resume__title' + (props.status ? ' left' : '')}>
+        Mon parcours
+      </h2>
       <div className='content'>
         <div
           className={'resume__content ' + (!props.status ? 'hidden' : 'show')}

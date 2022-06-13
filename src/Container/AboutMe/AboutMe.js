@@ -6,16 +6,10 @@ export default function AboutMe(props) {
     <section
       className={'about-me ' + (!props.status ? 'hidden' : '')}
       onClick={() => props.toggleElement('aboutMe')}
-      style={{
-        height: props.status ? `${window.innerHeight - 3 * 44}px` : '40px',
-      }}
     >
-      <div
-        className='about-me__title--container'
-        style={{ width: props.status ? '0' : '100%' }}
-      >
-        <h2 className='content__title'>À propos de moi</h2>
-      </div>
+      <h2 className={'about-me__title' + (props.status ? ' left' : '')}>
+        À propos de moi
+      </h2>
       <div
         className={'about-me__content ' + (!props.status ? 'hidden' : 'show')}
       >

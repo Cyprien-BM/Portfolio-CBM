@@ -1,0 +1,72 @@
+#star {
+  position: relative;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: var(--boxShadowOne);
+  z-index: -1;
+  transform: var(--parallax1);
+}
+
+#star::after {
+  content: '';
+  position: absolute;
+  top: var(--height);
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: var(--boxShadowOne);
+  z-index: -1;
+  transform: var(--parallax1);
+}
+
+#star2 {
+  position: relative;
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: var(--boxShadowSecond);
+  z-index: -1;
+  transform: var(--parallax2);
+}
+
+#star2::after {
+  content: '';
+  position: absolute;
+  top: var(--height);
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: var(--boxShadowSecond);
+  z-index: -1;
+  transform: var(--parallax2);
+}
+
+#star3 {
+  position: relative;
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: var(--boxShadowThird);
+  z-index: -1;
+  transform: var(--parallax3);
+}
+
+#star3::after {
+  content: '';
+  position: absolute;
+  top: var(--height);
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: var(--boxShadowThird);
+  z-index: -1;
+  transform: var(--parallax3);
+}
+
+#star,
+#star2,
+#star3 {
+  top: var(--starYPosition);
+  transition: top ease-in-out 300ms;
+}

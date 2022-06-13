@@ -2,7 +2,7 @@
 .project,
 .resume,
 .contact {
-  height: 40px;
+  height: calc(100vh - (3 * 44px));
   transition: height ease-in-out 800ms 500ms;
   overflow: hidden;
 }
@@ -18,6 +18,7 @@
 .project.hidden,
 .resume.hidden,
 .contact.hidden {
+  height: 40px;
   transition: height ease-in-out 800ms 500ms;
 }
 
@@ -28,20 +29,30 @@
   color: aliceblue;
 }
 
-.about-me__title--container,
-.project__title--container,
-.resume__title--container,
-.contact__title--container {
+.about-me__title,
+.project__title,
+.resume__title,
+.contact__title {
+  display: inline-block;
   text-align: right;
   width: 100%;
   white-space: nowrap;
   transition: width ease-in-out 700ms;
 }
 
-.about-me__title--container:hover,
-.project__title--container:hover,
-.resume__title--container:hover,
-.contact__title--container:hover {
+.about-me__title.left,
+.project__title.left,
+.resume__title.left,
+.contact__title.left {
+  display: inline-block;
+  text-align: right;
+  width: 0%;
+}
+
+.about-me__title:hover,
+.project__title:hover,
+.resume__title:hover,
+.contact__title:hover {
   cursor: pointer;
 }
 
