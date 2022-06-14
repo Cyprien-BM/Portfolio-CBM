@@ -46,7 +46,9 @@ export default function Contact(props) {
       className={'contact ' + (!props.status ? 'hidden' : '')}
       onClick={() => props.toggleElement('contact')}
     >
-        <h2 className={'contact__title' + (props.status ? ' left' : '')}>Contact</h2>
+      <h2 className={'contact__title' + (props.status ? ' left' : '')}>
+        Contact
+      </h2>
 
       <div className='content'>
         <div

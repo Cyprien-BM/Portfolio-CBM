@@ -37,7 +37,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #212121;
-  outline: aliceblue solid 1px;
+  border: aliceblue solid 1px;
   width: 400px;
   padding: 1rem;
 }
@@ -80,17 +80,7 @@
   margin-top: 0.5rem;
 }
 
-@media all and (min-width: 768px), (max-height: 815px) {
-  .contact__content {
-    overflow-y: scroll;
-    height: 100%;
-  }
-  .contact-form__input.body {
-    height: 5rem;
-  }
-}
-
-@media all and (min-width: 768px) and (max-height: 660px) {
+@media all and (max-height: 660px) {
   .contact__content {
     overflow-y: scroll;
     height: 100%;

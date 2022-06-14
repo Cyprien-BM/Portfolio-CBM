@@ -64,6 +64,24 @@
   color: greenyellow;
 }
 
+@media all and (max-height: 815px) {
+  .resume__content {
+    height: 100%;
+  }
+
+  .resume__content-txt {
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    height: 100%;
+    overflow-y: scroll;
+    text-align: justify;
+  }
+
+  .resume__download {
+    margin-bottom: 1rem;
+  }
+}
+
 @media all and (max-width: 991px) {
   .resume__content {
     height: 100%;
