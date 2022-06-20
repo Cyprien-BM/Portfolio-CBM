@@ -16,7 +16,7 @@
 .project-card img {
   border-radius: 9px 9px 0 0;
   width: auto;
-  height: 200px;
+  height: 180px;
   object-fit: cover;
   border-bottom: 1px solid aliceblue;
 }

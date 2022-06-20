@@ -31,8 +31,6 @@ export default function Project(props) {
       skills: [
         'React',
         'Redux',
-        'JavaScript',
-        'CSS',
         'Node.js',
         'Express',
         'Sequelize',
@@ -165,11 +163,11 @@ export default function Project(props) {
           </label>
         </div>
 
-        <article className='project__slide'>
+        <div className='project__slide'>
           {projectsToShow.map((projectData) => (
             <ProjectCard key={projectData.id} {...projectData} />
           ))}
-        </article>
+        </div>
       </div>
     </section>
   );

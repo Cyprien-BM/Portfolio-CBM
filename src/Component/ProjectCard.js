@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 export default function ProjectCard(props) {
   return (
-    <div className='project-card'>
+    <article className='project-card'>
       <a href={props.media[0]} target='_blank'>
         <img src={props.media[0]} alt='Photo du projet' />
       </a>
@@ -29,6 +29,6 @@ export default function ProjectCard(props) {
           ))}
         </ul>
       </div>
-    </div>
+    </article>
   );
 }
