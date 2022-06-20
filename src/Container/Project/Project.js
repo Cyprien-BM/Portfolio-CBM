@@ -26,7 +26,7 @@ export default function Project(props) {
       name: 'Groupomania',
       media: [groupomania],
       description:
-        "Réalisation fullstack d'un réseau social d'entreprise avec gestion/creation de compte, de poste, de like et de commentaire.",
+        "Réalisation fullstack d'un réseau social d'entreprise avec gestion/creation de compte, de poste, de like et de commentaire. Version live déployé sur Heroku(back), Vercel(front) et stockage des données via AWS S3",
       type: 'formation',
       skills: [
         'React',
@@ -40,7 +40,7 @@ export default function Project(props) {
       ],
       github:
         'https://github.com/Cyprien-BM/OpenCLassrooms_Projet-7_Creez-un-reseau-social-d-entreprise',
-      live: '',
+      live: 'https://cbm-groupomania.vercel.app/login',
     },
     {
       id: 3,
@@ -165,11 +165,11 @@ export default function Project(props) {
           </label>
         </div>
 
-        <div className='project__slide'>
+        <article className='project__slide'>
           {projectsToShow.map((projectData) => (
             <ProjectCard key={projectData.id} {...projectData} />
           ))}
-        </div>
+        </article>
       </div>
     </section>
   );
