@@ -56,7 +56,7 @@ export default function Contact(props) {
         >
           <div className='social-network'>
             <a
-              href='https://www.linkedin.com/in/cyprien-bellemin-menard-06a914141/'
+              href='https://www.linkedin.com/in/cyprien-bm/'
               className='social-network__data'
               target={'_blank'}
             >
