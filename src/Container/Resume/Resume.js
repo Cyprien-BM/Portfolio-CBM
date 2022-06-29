@@ -1,7 +1,7 @@
 import { React } from 'react';
 import './Resume.css';
 import { BsArrowUp } from 'react-icons/bs';
-import resume from '../../Assets/Images/cv.pdf';
+import resume from '../../Assets/Images/CV_CBM.pdf';
 
 export default function Resume(props) {
   return (
